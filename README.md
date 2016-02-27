@@ -1,17 +1,36 @@
-# Fasteragile-select-button
+# fasteragile-select-button
 
-This README outlines the details of collaborating on this Ember addon.
+An Ember CLI addon that provides a component to display a font-awesome based checkbox.
+
+The icon was designed for a mobile application using ember-cli-ratchet, but
+it should also work with webapps.
+
+## Usage
+
+```
+// In your .hbs template
+{{select-button selected=true}}
+```
+Produces output similar to this:
+
+![checkboxes](https://raw.githubusercontent.com/fasteragile/fasteragile-select-button/master/vendor/fasteragile-select-button-example.png)
+
+## Actions Up
+
+The select-button component emits "selectionUpdated" with a boolean argument
+each time the toggle button is clicked.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```
+ember install fasteragile-select-button
+```
 
-## Running
+OR
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```
+npm install fasteragile-select-button
+```
 
 ## Running Tests
 
@@ -19,8 +38,4 @@ This README outlines the details of collaborating on this Ember addon.
 * `ember test`
 * `ember test --server`
 
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+Built with <3 by [FasterAgile](http://www.fasteragile.com).
