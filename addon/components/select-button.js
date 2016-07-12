@@ -6,14 +6,16 @@ export default Ember.Component.extend({
   classNameBindings: ['iconClass'],
 
   selected: false,
+  selectedIcon: 'fa-check-circle',
+  unselectedIcon: 'fa-circle-o',
 
   iconClass: function() {
     if (this.get('selected')) {
-      return 'fa-check-circle';
+      return this.get('selectedIcon');
     } else {
-      return 'fa-circle-o';
+      return this.get('unselectedIcon');
     }
-  }.property('selected'),
+  }.property('selected', 'selectedIcon', 'unselectedIcon'),
 
   click: function() {
     let state = !this.get('selected');

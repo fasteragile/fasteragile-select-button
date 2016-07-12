@@ -9,7 +9,7 @@ it should also work with webapps.
 
 ```
 // In your .hbs template
-{{select-button selected=true}}
+{{select-button selected=true selectedIcon='fa-check-circle' unselectedIcon='fa-circle-o'}}
 ```
 Produces output similar to this:
 
